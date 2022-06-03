@@ -30,7 +30,6 @@ int main()
     dp[1][1] = v[1].b;
     dp[1][2] = v[1].c;
 
-    //BU
     for(int i=2;i<=n;i++)
     {
         dp[i][0] = v[i].a + max(dp[i-1][1], dp[i-1][2]);
